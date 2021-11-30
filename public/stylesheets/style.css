@@ -1,0 +1,97 @@
+body {
+  margin: 16px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00b7ff; }
+
+*[disabled] {
+  color: #818181; }
+
+#titlebar {
+  margin: 8 16;
+  padding: 0 16 16 16;
+  position: sticky;
+  top: 16;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.4); }
+  #titlebar .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 8; }
+    #titlebar .title .controls {
+      padding: 8; }
+      #titlebar .title .controls span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32;
+        height: 32;
+        border-radius: 4px; }
+        #titlebar .title .controls span:hover {
+          background-color: #c1f1e1; }
+  #titlebar .slidecontainer {
+    width: 100%; }
+    #titlebar .slidecontainer .slider {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 16px;
+      background: #c1f1e1;
+      border-radius: 4px;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: 0.2s;
+      transition: opacity 0.2s; }
+      #titlebar .slidecontainer .slider:hover {
+        opacity: 1; }
+      #titlebar .slidecontainer .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        /* Override default look */
+        appearance: none;
+        width: 24px;
+        /* Set a specific slider handle width */
+        height: 24px;
+        /* Slider handle height */
+        background: #45584e;
+        /* Green background */
+        cursor: pointer;
+        /* Cursor on hover */ }
+      #titlebar .slidecontainer .slider::-moz-range-thumb {
+        width: 24px;
+        /* Set a specific slider handle width */
+        height: 24px;
+        /* Slider handle height */
+        background: #45584e;
+        /* Green background */
+        cursor: pointer;
+        /* Cursor on hover */ }
+
+#field {
+  display: flex;
+  justify-content: center;
+  margin: 16; }
+  #field #fieldWrapper {
+    --block-size: 10px;
+    --gap-size: 2px;
+    display: grid;
+    grid-gap: var(--gap-size);
+    padding: var(--gap-size); }
+    #field #fieldWrapper div {
+      width: var(--block-size);
+      height: var(--block-size);
+      transition: background-color 0.1s; }
+      #field #fieldWrapper div.on {
+        background-color: #45584e; }
+      #field #fieldWrapper div.off {
+        background-color: #c1f1e1; }
+
+#footer {
+  padding: 8px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <section id="titlebar">
+      <div class="title">
+        <h1>Game of Life</h1>
+        <div class="controls">
+          <span id="fastRewind">
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M11.5,12L20,18V6M11,18V6L2.5,12L11,18Z"
+              />
+            </svg>
+          </span>
+          <span id="fastForward">
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M13,6V18L21.5,12M4,18L12.5,12L4,6V18Z"
+              />
+            </svg>
+          </span>
+          <span id="play">
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+            </svg>
+          </span>
+          <span id="pause" disabled>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M14,19H18V5H14M6,19H10V5H6V19Z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="-100"
+          max="0"
+          value="0"
+          class="slider"
+          id="rewind"
+        />
+      </div>
+    </section>
+    <section id="field">
+      <div id="fieldWrapper"></div>
+    </section>
+    <section id="footer"></section>
+    <script type="module" src="/javascripts/index.js"></script>
+  </body>
+</html>
